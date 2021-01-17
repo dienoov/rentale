@@ -1,5 +1,6 @@
-package com.rentale.client;
+package com.rentale.client.app.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -15,7 +16,16 @@ import java.util.ResourceBundle;
 public class Login implements Initializable {
     @FXML
     public void routeRegister(MouseEvent event) throws Exception{
-        Parent view = FXMLLoader.load(getClass().getResource("register.fxml"));
+        Parent view = FXMLLoader.load(getClass().getResource("/com/rentale/client/resources/fxml/register.fxml"));
+
+        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(view));
+        window.show();
+    }
+
+    @FXML
+    public void authLogin(ActionEvent event) throws Exception{
+        Parent view = FXMLLoader.load(getClass().getResource("/com/rentale/client/resources/fxml/dashboard.fxml"));
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(new Scene(view));

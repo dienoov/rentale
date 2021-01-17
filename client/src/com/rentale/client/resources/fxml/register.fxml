@@ -3,48 +3,75 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="462.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Register">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Register">
    <children>
-      <Label layoutX="233.0" layoutY="39.0" text="Welcome," textFill="#959595">
+      <Label text="Welcome," textFill="#959595">
          <font>
             <Font size="24.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="25.0" />
+         </VBox.margin>
       </Label>
-      <Label layoutX="73.0" layoutY="80.0" text="It only takes a few seconds to create your account" textFill="#505050">
+      <Label text="It only takes a few seconds to create your account" textFill="#505050">
          <font>
             <Font size="18.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
       </Label>
-      <JFXTextField focusColor="#51d7a0" layoutX="97.0" layoutY="152.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
+      <JFXTextField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
       </JFXTextField>
-      <JFXPasswordField focusColor="#51d7a0" layoutX="97.0" layoutY="217.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
+      <JFXPasswordField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
       </JFXPasswordField>
-      <JFXPasswordField focusColor="#51d7a0" layoutX="97.0" layoutY="282.0" prefHeight="40.0" prefWidth="400.0" promptText="Repeat Password" unFocusColor="#51d7a0">
+      <JFXPasswordField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Repeat Password" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
       </JFXPasswordField>
-      <Label layoutX="97.0" layoutY="347.0" text="Already have an account?" textFill="#505050" />
-      <Label layoutX="270.0" layoutY="347.0" onMousePressed="#routeLogin" text="Sign in" textFill="#51d7a0">
+      <HBox maxHeight="50.0" maxWidth="400.0" prefHeight="50.0" prefWidth="400.0">
+         <children>
+            <Label text="Already have an account?" textFill="#505050" />
+            <Label onMousePressed="#routeLogin" text="Sign in" textFill="#51d7a0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
-      </Label>
-      <JFXButton alignment="CENTER" layoutX="407.0" layoutY="385.0" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #51d7a0;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
+         <VBox.margin>
+            <Insets left="300.0" />
+         </VBox.margin>
       </JFXButton>
    </children>
-</AnchorPane>
+</VBox>

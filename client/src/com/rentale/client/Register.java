@@ -12,10 +12,10 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Login implements Initializable {
+public class Register implements Initializable {
     @FXML
-    public void routeRegister(MouseEvent event) throws Exception{
-        Parent view = FXMLLoader.load(getClass().getResource("register.fxml"));
+    public void routeLogin(MouseEvent event) throws Exception{
+        Parent view = FXMLLoader.load(getClass().getResource("login.fxml"));
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
         window.setScene(new Scene(view));

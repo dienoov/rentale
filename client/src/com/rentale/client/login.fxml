@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rentale.client.Login"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.Login">
+   <children>
+      <Label layoutX="208.0" layoutY="40.0" text="Welcome back," textFill="#959595">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="83.0" text="Please sign in to your account below" textFill="#505050">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField focusColor="#51d7a0" layoutX="110.0" layoutY="160.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField focusColor="#51d7a0" layoutX="110.0" layoutY="235.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <Label layoutX="110.0" layoutY="297.0" text="No account?" textFill="#505050" />
+      <Label layoutX="197.0" layoutY="297.0" onMousePressed="#routeRegister" text="Sign up now" textFill="#51d7a0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <JFXButton alignment="CENTER" layoutX="420.0" layoutY="335.0" prefHeight="40.0" prefWidth="98.0" style="-fx-background-color: #51d7a0;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
 </AnchorPane>

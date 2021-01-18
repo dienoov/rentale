@@ -8,20 +8,25 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Dashboard">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Dashboard">
    <children>
       <VBox alignment="TOP_CENTER" layoutY="75.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0">
          <children>
-            <JFXButton prefHeight="50.0" prefWidth="250.0" text="Dashboard">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Dashboard">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
                <font>
-                  <Font size="16.0" />
+                  <Font size="17.0" />
                </font>
+               <graphic>
+                  <SVGPath content="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+               </graphic>
             </JFXButton>
             <Label text="MANAGES" textFill="#51d7a0">
                <font>
@@ -31,15 +36,29 @@
                   <Insets bottom="5.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <JFXButton prefHeight="50.0" prefWidth="250.0" text="Venues">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Venues">
                <font>
-                  <Font size="16.0" />
+                  <Font size="17.0" />
                </font>
+               <graphic>
+                  <SVGPath content="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" fillRule="EVEN_ODD" />
+               </graphic>
             </JFXButton>
-            <JFXButton prefHeight="50.0" prefWidth="250.0" text="Facilities">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Facilities">
                <font>
-                  <Font size="16.0" />
+                  <Font size="17.0" />
                </font>
+               <graphic>
+                  <SVGPath content="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" fillRule="EVEN_ODD" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Users">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <SVGPath content="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" fillRule="EVEN_ODD" />
+               </graphic>
             </JFXButton>
             <Label text="REPORTS" textFill="#51d7a0">
                <font>
@@ -49,22 +68,150 @@
                   <Insets bottom="5.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <JFXButton prefHeight="50.0" prefWidth="250.0" text="Rent">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Rent">
                <font>
-                  <Font size="16.0" />
+                  <Font size="17.0" />
                </font>
+               <graphic>
+                  <SVGPath content="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" fillRule="EVEN_ODD" />
+               </graphic>
             </JFXButton>
-            <JFXButton prefHeight="50.0" prefWidth="250.0" text="Indemnity">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Indemnity">
                <font>
-                  <Font size="16.0" />
+                  <Font size="17.0" />
                </font>
+               <graphic>
+                  <SVGPath content="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm1 8a1 1 0 100 2h6a1 1 0 100-2H7z" fillRule="EVEN_ODD" />
+               </graphic>
             </JFXButton>
          </children>
          <effect>
-            <DropShadow blurType="GAUSSIAN" color="#0000003f" height="0.0" radius="12.0" width="50.0" />
+            <DropShadow blurType="GAUSSIAN" color="#0000000d" height="25.0" radius="18.25" width="50.0" />
          </effect>
       </VBox>
-      <VBox layoutX="1180.0" layoutY="520.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <VBox layoutX="1180.0" layoutY="520.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #3ac47d;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Rents" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="\$5.1k" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #3f6ad8;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Users" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="24" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #f7b924;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Sad" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="420" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #d92550;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Errors" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+               </children>
+            </HBox>
+         </children></VBox>
       <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #fafbfc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -77,7 +224,7 @@
             <Insets left="25.0" />
          </padding>
          <effect>
-            <DropShadow blurType="GAUSSIAN" color="#00000040" height="50.0" radius="12.0" width="0.0" />
+            <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="5.75" width="0.0" />
          </effect></HBox>
    </children>
 </AnchorPane>

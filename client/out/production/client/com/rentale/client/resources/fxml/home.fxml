@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -11,12 +13,34 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="720.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Home">
    <children>
-      <ScrollPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+          <AnchorPane fx:id="scrollAnchor" minHeight="0.0" minWidth="0.0" prefHeight="1920.0" prefWidth="1287.0">
+               <children>
+                  <VBox fx:id="cover" alignment="CENTER" prefHeight="652.0" prefWidth="1271.0" style="-fx-background-color: #d1d8d6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label text="Find the best venues for your event" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="48.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="BOTTOM_CENTER" maxWidth="650.0" prefHeight="75.0" prefWidth="650.0">
+                           <children>
+                              <TextField maxWidth="600.0" prefHeight="40.0" prefWidth="550.0" promptText="Search by venue or location" style="-fx-background-color: #ffffff;" />
+                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0;" text="Search" textFill="WHITE">
+                                 <graphic>
+                                    <SVGPath content="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" fill="WHITE" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children></AnchorPane>
         </content>
       </ScrollPane>
       <HBox alignment="CENTER" layoutX="432.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #fafbfc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

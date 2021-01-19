@@ -11,11 +11,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Home">
+<AnchorPane prefHeight="1920.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Home">
    <children>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" style="-fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <content>
@@ -40,6 +42,225 @@
                         </HBox>
                      </children>
                   </VBox>
+                  <Label alignment="CENTER" prefHeight="128.0" prefWidth="1271.0" text="BOOK UNIQUE VENUES FROM LOCAL HOSTS" textAlignment="CENTER" textFill="#505050" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="652.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="52.0" />
+                     </padding>
+                  </Label>
+                  <HBox alignment="TOP_CENTER" maxHeight="360.0" prefHeight="300.0" prefWidth="1271.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="780.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="200.0" maxWidth="360.0" prefHeight="200.0" prefWidth="360.0" style="-fx-border-color: #51d7a0; -fx-border-width: 1; -fx-background-color: #fafbfc;">
+                           <children>
+                              <Label text="Find the right venues">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="FAST" textFill="#89baae">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Use our smart filter search system to narrow down and find that perfect space for FREE." textAlignment="CENTER" wrappingWidth="330.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#0000000d" height="50.0" radius="24.5" width="50.0" />
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="200.0" maxWidth="360.0" prefHeight="200.0" prefWidth="360.0" style="-fx-border-color: #51d7a0; -fx-border-width: 1; -fx-background-color: #fafbfc;">
+                           <children>
+                              <Label text="Contact venues">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="DIRECTLY" textFill="#f05b47">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Inquire directly to venues through the site or through a direct call to the person in charge." textAlignment="CENTER" wrappingWidth="330.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#0000000d" height="50.0" radius="24.5" width="50.0" />
+                           </effect>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="200.0" maxWidth="360.0" prefHeight="200.0" prefWidth="360.0" style="-fx-border-color: #51d7a0; -fx-border-width: 1; -fx-background-color: #fafbfc;">
+                           <children>
+                              <Label text="Get the best deals">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label text="EXCLUSIVELY" textFill="#f3b557">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Login or create a new account now to join RENTALE to get the best deals." textAlignment="CENTER" wrappingWidth="330.0" />
+                           </children>
+                           <effect>
+                              <DropShadow color="#0000000d" height="50.0" radius="24.5" width="50.0" />
+                           </effect>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" text="Featured venues" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1100.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="HOST YOUR EVENT AT LOCAL FEATURED VENUES" textFill="#959595" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1150.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="540.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1200.0">
+                     <children>
+                        <VBox maxHeight="480.0" prefHeight="200.0" prefWidth="360.0">
+                           <children>
+                              <Pane prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #d1d8d6;" />
+                              <Label prefWidth="356.0" text="Hotel Nikko Bali Benoa Beach ">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="BALI">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafe, Meeting Room, Restaurant">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hotel Nikko Bali Benoa Beach is the ideal venue for small-scale to mid-scale corporate and private functions." wrappingWidth="356.0">
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton prefHeight="34.0" prefWidth="356.0" style="-fx-background-color: #51d7a0;" text="Inquire" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="20.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="WHITE" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <VBox maxHeight="480.0" prefHeight="200.0" prefWidth="360.0">
+                           <children>
+                              <Pane prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #d1d8d6;" />
+                              <Label prefWidth="356.0" text="Fountain Lounge">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="CENTRAL JAKARTA">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafe, Hotel, Restaurant, Unique Venue">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Located on the Mezzanine level, Fountain Lounge continues to be recognised for its prominent location." wrappingWidth="356.0">
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton prefHeight="34.0" prefWidth="356.0" style="-fx-background-color: #51d7a0;" text="Inquire" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="20.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="WHITE" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" right="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox maxHeight="480.0" prefHeight="200.0" prefWidth="360.0">
+                           <children>
+                              <Pane prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: #d1d8d6;" />
+                              <Label prefWidth="356.0" text=" Kayu-Kayu Restaurant">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="TANGERANG">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fill="#505050" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Space, Meeting Room, Restaurant">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="10.0" />
+                                 </VBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kayu Kayu is a family-friendly restaurant that focuses on bringing people closer to nature. An extension from Kosenda Hotel." wrappingWidth="356.0">
+                                 <VBox.margin>
+                                    <Insets left="2.0" right="2.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton prefHeight="34.0" prefWidth="356.0" style="-fx-background-color: #51d7a0;" text="Inquire" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" left="2.0" right="2.0" top="20.0" />
+                                 </VBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="WHITE" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" text="RENTALE © 2021" textAlignment="CENTER" textFill="#959595" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                </children></AnchorPane>
         </content>
       </ScrollPane>

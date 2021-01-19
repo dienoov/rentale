@@ -19,6 +19,7 @@ public class Login implements Initializable {
         Parent view = FXMLLoader.load(getClass().getResource("/com/rentale/client/resources/fxml/register.fxml"));
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        window.setMaximized(false);
         window.setScene(new Scene(view));
         window.show();
     }
@@ -28,6 +29,7 @@ public class Login implements Initializable {
         Parent view = FXMLLoader.load(getClass().getResource("/com/rentale/client/resources/fxml/dashboard.fxml"));
 
         Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        window.setMaximized(false);
         window.setScene(new Scene(view));
         window.show();
     }

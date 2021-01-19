@@ -28,7 +28,7 @@
             <Insets bottom="50.0" />
          </VBox.margin>
       </Label>
-      <JFXTextField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
+      <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>
@@ -36,7 +36,7 @@
             <Insets bottom="40.0" />
          </VBox.margin>
       </JFXTextField>
-      <JFXPasswordField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
+      <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>
@@ -44,7 +44,7 @@
             <Insets bottom="40.0" />
          </VBox.margin>
       </JFXPasswordField>
-      <JFXPasswordField focusColor="#51d7a0" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Repeat Password" unFocusColor="#51d7a0">
+      <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Repeat Password" unFocusColor="#51d7a0">
          <font>
             <Font size="16.0" />
          </font>

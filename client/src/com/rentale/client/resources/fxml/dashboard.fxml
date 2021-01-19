@@ -3,6 +3,8 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -211,6 +213,16 @@
                   </Pane>
                </children>
             </HBox>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/style.css">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="150.0" text="Name" />
+                <TableColumn fx:id="location" prefWidth="250.0" text="Location" />
+                  <TableColumn fx:id="desc" minWidth="500.0" prefWidth="-1.0" text="Description" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="35.0" right="35.0" top="35.0" />
+               </VBox.margin>
+            </TableView>
          </children></VBox>
       <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #fafbfc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>

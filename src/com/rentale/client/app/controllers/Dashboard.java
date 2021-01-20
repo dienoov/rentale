@@ -23,10 +23,18 @@ public class Dashboard implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        setActiveMenu(dashboardBtn);
         setContent("admin/main");
 
-        dashboardBtn.setOnAction(event -> setContent("admin/main"));
-        userBtn.setOnAction(event -> setContent("admin/user"));
+        dashboardBtn.setOnAction(event -> {
+            setActiveMenu(dashboardBtn);
+            setContent("admin/main");
+        });
+
+        userBtn.setOnAction(event -> {
+            setActiveMenu(userBtn);
+            setContent("admin/user");
+        });
     }
 
     public void setConstraint(AnchorPane content) {
@@ -41,6 +49,13 @@ public class Dashboard implements Initializable {
         setConstraint(content);
         anchorContent.getChildren().clear();
         anchorContent.getChildren().add(content);
+    }
+
+    public void setActiveMenu(JFXButton clickedMenu) {
+        userBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        dashboardBtn.getStyleClass().removeIf(style -> style.equals("active"));
+
+        clickedMenu.getStyleClass().add("active");
     }
 
 }

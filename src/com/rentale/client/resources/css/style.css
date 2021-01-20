@@ -1,10 +1,17 @@
-/* 
-    Created on : 26 Jan, 2019, 9:58:38 PM
-    Author     : Pawan Ghewande
-*/
+@font-face {
+    src: url("../fonts/nunito.ttf");
+}
 
-.root{
-    -fx-background-color: #fafbfc;
+.root {
+    -fx-font-family: "Nunito";
+}
+
+.dashboard-menu:hover {
+    -fx-background-color: #a4d6c3;
+}
+
+.dashboard-menu.active {
+    -fx-background-color: #6cd6ab;
 }
 
 .table-view{
@@ -40,7 +47,7 @@
     -fx-pref-height:50px;
 }
 .table-view  .table-column{
-    -fx-padding: 18 0 0 10;
+    -fx-padding: 18 10 10 10;
     -fx-border-width: 0px 0px 0px 0px ;
 }
 
@@ -79,4 +86,4 @@
 .table-view .table-row-cell:empty{
     -fx-background-color:#FFFFFF;
      -fx-border-color:#FFFFFF;
-} 
+}

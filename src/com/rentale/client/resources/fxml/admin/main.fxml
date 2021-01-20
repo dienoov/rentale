@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.rentale.client.app.controllers.admin.Main" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="1190.0" layoutY="530.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #3ac47d;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Rents" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="\$5.1k" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #3f6ad8;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Users" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="24" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #f7b924;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Sad" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="420" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="150.0" prefHeight="150.0" prefWidth="225.0" style="-fx-background-color: #d92550;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="150.0" prefWidth="225.0">
+                           <children>
+                              <SVGPath content="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" fill="TRANSPARENT" scaleX="3.0" scaleY="3.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+                              <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label text="Errors" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                  </Pane>
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
+               <columns>
+                  <TableColumn fx:id="name" prefWidth="150.0" text="Name" />
+                  <TableColumn fx:id="location" prefWidth="250.0" text="Location" />
+                  <TableColumn fx:id="desc" minWidth="500.0" prefWidth="-1.0" text="Description" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="35.0" right="35.0" top="35.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

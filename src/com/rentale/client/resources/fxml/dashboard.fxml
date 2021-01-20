@@ -16,7 +16,7 @@
    <children>
       <VBox alignment="TOP_CENTER" layoutY="75.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0">
          <children>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Dashboard">
+            <JFXButton fx:id="dashboardBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Dashboard">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -35,7 +35,7 @@
                   <Insets bottom="5.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Venues">
+            <JFXButton fx:id="venueBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" text="Venues">
                <font>
                   <Font size="17.0" />
                </font>
@@ -43,7 +43,7 @@
                   <SVGPath content="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" fillRule="EVEN_ODD" />
                </graphic>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Facilities">
+            <JFXButton fx:id="facilitiyBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Facilities">
                <font>
                   <Font size="17.0" />
                </font>
@@ -51,7 +51,7 @@
                   <SVGPath content="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" fillRule="EVEN_ODD" />
                </graphic>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Users">
+            <JFXButton fx:id="userBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" text="Users">
                <font>
                   <Font size="17.0" />
                </font>

@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.rentale.client.app.controllers.admin.User"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.User">
+   <children>
+      <VBox layoutX="1200.0" layoutY="540.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="150.0" text="ID" />
+                  <TableColumn fx:id="email" prefWidth="468.0" text="Email" />
+                  <TableColumn fx:id="role" minWidth="239.0" prefWidth="239.0" text="Role" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="35.0" right="35.0" top="35.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>

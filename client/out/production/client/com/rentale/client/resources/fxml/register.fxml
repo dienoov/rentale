@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Register">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="498.0" prefWidth="600.0" style="-fx-background-color: #fafbfc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Register">
    <children>
       <Label text="Welcome," textFill="#959595">
          <font>
@@ -65,7 +65,7 @@
             </Label>
          </children>
       </HBox>
-      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authRegister" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authRegister" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 5em;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

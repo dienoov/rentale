@@ -6,11 +6,10 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Login">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fafbfc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Login">
    <children>
       <Label text="Welcome back," textFill="#959595">
          <font>
@@ -44,25 +43,12 @@
             <Insets bottom="15.0" />
          </VBox.margin>
       </JFXPasswordField>
-      <HBox maxHeight="50.0" maxWidth="400.0" prefHeight="50.0" prefWidth="400.0">
-         <children>
-            <Label text="No account?" textFill="#505050" />
-            <Label onMousePressed="#routeRegister" text="Sign up now" textFill="#51d7a0">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <HBox.margin>
-                  <Insets left="2.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-      </HBox>
-      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authLogin" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authLogin" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 5em;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <VBox.margin>
-            <Insets left="300.0" />
+            <Insets left="300.0" top="50.0" />
          </VBox.margin>
       </JFXButton>
    </children>

@@ -18,6 +18,8 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("resources/fxml/login.fxml"));
         primaryStage.getIcons().add(new Image("com/rentale/client/resources/img/icon.png"));
         primaryStage.setTitle("rentale");
+        primaryStage.setFullScreen(true);
+        primaryStage.setMaximized(true);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

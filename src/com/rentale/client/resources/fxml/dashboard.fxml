@@ -14,6 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Dashboard">
    <children>
+      <AnchorPane fx:id="anchorContent" layoutX="250.0" layoutY="75.0" prefHeight="515.0" prefWidth="739.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
       <VBox alignment="TOP_CENTER" layoutY="75.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0">
          <children>
             <JFXButton fx:id="dashboardBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" styleClass="dashboard-menu" text="Dashboard">
@@ -103,6 +104,9 @@
          <effect>
             <DropShadow blurType="GAUSSIAN" color="#0000000d" height="25.0" radius="18.25" width="50.0" />
          </effect>
+         <padding>
+            <Insets top="25.0" />
+         </padding>
       </VBox>
       <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #fafbfc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -116,8 +120,7 @@
             <Insets left="25.0" />
          </padding>
          <effect>
-            <DropShadow blurType="GAUSSIAN" color="#0000001a" height="25.0" radius="5.75" width="0.0" />
+            <DropShadow blurType="GAUSSIAN" color="#0000001a" height="250.0" radius="62.0" spread="0.5" width="0.0" />
          </effect></HBox>
-      <AnchorPane fx:id="anchorContent" layoutX="250.0" layoutY="75.0" prefHeight="515.0" prefWidth="739.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
    </children>
 </AnchorPane>

@@ -6,50 +6,66 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fafbfc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Login">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.Login">
    <children>
-      <Label text="Welcome back," textFill="#959595">
-         <font>
-            <Font size="24.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="25.0" />
-         </VBox.margin>
-      </Label>
-      <Label text="Please sign in to your account below" textFill="#505050">
-         <font>
-            <Font size="18.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="50.0" />
-         </VBox.margin>
-      </Label>
-      <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
-         <font>
-            <Font size="16.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="40.0" />
-         </VBox.margin>
-      </JFXTextField>
-      <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
-         <font>
-            <Font size="16.0" />
-         </font>
-         <VBox.margin>
-            <Insets bottom="15.0" />
-         </VBox.margin>
-      </JFXPasswordField>
-      <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authLogin" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 5em;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <VBox.margin>
-            <Insets left="300.0" top="50.0" />
-         </VBox.margin>
-      </JFXButton>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SVGPath content="M33,-34C44.6,-29.6,57,-20.9,59.7,-10C62.3,1,55,14.3,47.6,27.8C40.2,41.3,32.6,55,18.9,66.1C5.3,77.1,-14.5,85.6,-30.6,81C-46.8,76.5,-59.4,59,-63.4,41.6C-67.5,24.2,-63.1,6.9,-57.3,-7.3C-51.5,-21.6,-44.2,-32.8,-34.4,-37.5C-24.6,-42.2,-12.3,-40.4,-0.8,-39.4C10.7,-38.5,21.4,-38.4,33,-34Z" fill="#51d7a0" scaleX="5.0" scaleY="5.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SVGPath content="M40.7,-48.8C51.3,-39.6,57.5,-25.4,60.3,-10.5C63.1,4.4,62.4,20,57.2,36.9C52.1,53.8,42.4,72,27.9,77.8C13.3,83.7,-6.2,77.3,-19.1,66.5C-31.9,55.7,-37.9,40.5,-48.8,26.1C-59.7,11.6,-75.4,-2.2,-77.8,-18C-80.2,-33.9,-69.2,-51.6,-54,-60C-38.8,-68.5,-19.4,-67.5,-2.2,-64.9C15,-62.3,30,-58,40.7,-48.8ZM40.7,-48.8C51.3,-39.6,57.5,-25.4,60.3,-10.5C63.1,4.4,62.4,20,57.2,36.9C52.1,53.8,42.4,72,27.9,77.8C13.3,83.7,-6.2,77.3,-19.1,66.5C-31.9,55.7,-37.9,40.5,-48.8,26.1C-59.7,11.6,-75.4,-2.2,-77.8,-18C-80.2,-33.9,-69.2,-51.6,-54,-60C-38.8,-68.5,-19.4,-67.5,-2.2,-64.9C15,-62.3,30,-58,40.7,-48.8Z" fill="#f1fbf7" scaleX="5.0" scaleY="5.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label style="-fx-font-family: 'Montserrat Bold';" text="Welcome back," textFill="#51d7a0">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label style="-fx-font-family: Nunito;" text="Please sign in to your account below" textFill="#505050">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="60.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Email" unFocusColor="#51d7a0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Password" unFocusColor="#51d7a0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXButton alignment="CENTER" maxHeight="40.0" maxWidth="100.0" onAction="#authLogin" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: .5em;" text="LOGIN" textAlignment="CENTER" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="300.0" top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</AnchorPane>

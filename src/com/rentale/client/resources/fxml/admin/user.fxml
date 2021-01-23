@@ -1,15 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.User">
    <children>
-      <VBox layoutX="1200.0" layoutY="540.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton maxHeight="40.0" prefHeight="40.0" style="-fx-background-color: #16aaff;" text="Edit" textFill="WHITE">
+               <graphic>
+                  <SVGPath content="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" fill="#ffffff00" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Nunito Regular" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton maxHeight="40.0" prefHeight="40.0" style="-fx-background-color: #d92550;" text="Delete" textFill="WHITE">
+               <graphic>
+                  <SVGPath content="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" fill="#ffffff00" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Nunito Regular" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="42.0" style="-fx-background-color: #3ac47d;" text="Create New" textFill="WHITE">
+               <graphic>
+                  <SVGPath content="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Nunito Regular" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="35.0" right="35.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets left="35.0" right="35.0" />
+         </padding>
+         <children>
+            <Pane maxHeight="100.0" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <SVGPath content="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" fill="#51d69f00" layoutX="40.0" layoutY="40.0" scaleX="3.0" scaleY="3.0" stroke="#51d7a0" strokeWidth="0.4" />
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#0000001a" height="50.0" radius="24.5" width="50.0" />
+               </effect>
+            </Pane>
+            <VBox alignment="CENTER_LEFT" maxHeight="100.0" prefHeight="100.0" prefWidth="400.0">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+               <children>
+                  <Label text="Users Table">
+                     <font>
+                        <Font name="Nunito Regular" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Create, edit or delete a user">
+                     <font>
+                        <Font name="Nunito Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="1200.0" layoutY="540.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
             <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
                <columns>
@@ -20,6 +104,9 @@
                <VBox.margin>
                   <Insets left="35.0" right="35.0" top="35.0" />
                </VBox.margin>
+               <effect>
+                  <DropShadow color="#0000001a" height="50.0" radius="24.5" width="50.0" />
+               </effect>
             </TableView>
          </children>
       </VBox>

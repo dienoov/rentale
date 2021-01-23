@@ -1,5 +1,26 @@
 @font-face {
+    font-family: "Nunito";
     src: url("../fonts/nunito.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Bold";
+    src: url("../fonts/nunitobold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Black";
+    src: url("../fonts/nunitoblack.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/montserratbold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Black";
+    src: url("../fonts/montserratblack.ttf");
 }
 
 .root {
@@ -14,41 +35,44 @@
     -fx-background-color: #6cd6ab;
 }
 
-.table-view{
+.table-view {
     -fx-background-color: transparent;
 }
 
-.table-view:focused{
+.table-view:focused {
     -fx-background-color: transparent;
 }
 
-.table-view .column-header-background{
-    -fx-background-color:#FFFFFF;
+.table-view .column-header-background {
+    -fx-background-color: #FFFFFF;
     -fx-border-color: #51d7a0;
-    -fx-border-width: 0px 0px 1px 0px ;
+    -fx-border-width: 0px 0px 1px 0px;
     -fx-border-style: solid;
 }
-.table-view:row-selection .column-header-background .filler{
-    -fx-background-color:#FFFFFF;
-}
-.table-view:row-selection .column-header-background .show-hide-columns-button{
-    -fx-background-color:#e0e0e0;
+
+.table-view:row-selection .column-header-background .filler {
+    -fx-background-color: #FFFFFF;
 }
 
-.table-view .column-header-background .label{
+.table-view:row-selection .column-header-background .show-hide-columns-button {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-view .column-header-background .label {
     -fx-background-color: transparent;
     -fx-text-fill: #505050;
-    -fx-font-weight:bold;
-    -fx-font-size:16px;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
 }
 
 .table-view .column-header {
     -fx-background-color: transparent;
-    -fx-pref-height:50px;
+    -fx-pref-height: 50px;
 }
-.table-view  .table-column{
+
+.table-view .table-column {
     -fx-padding: 18 10 10 10;
-    -fx-border-width: 0px 0px 0px 0px ;
+    -fx-border-width: 0px 0px 0px 0px;
 }
 
 .table-view > .virtual-flow > .scroll-bar:vertical,
@@ -65,25 +89,27 @@
     -fx-opacity: 0;
 }
 
-.table-view .table-row-cell{
-    -fx-background-color:#FFF;
-    -fx-font-size:14px;
-    -fx-pref-height:50px;
-    -fx-border-width: 0px 0px 1px 0px ;
-    -fx-border-color:#e0e0e0;
+.table-view .table-row-cell {
+    -fx-background-color: #FFF;
+    -fx-font-size: 14px;
+    -fx-pref-height: 50px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #e0e0e0;
 }
 
 .table-view .table-row-cell:hover {
-    -fx-background-color:#e0e0e0;
+    -fx-background-color: #e0e0e0;
 }
 
-.table-view .table-row-cell:selected{
+.table-view .table-row-cell:selected {
     -fx-background-color: #51d7a0;
 }
-.table-view:row-selection .virtual-flow .scroll-bar:vertical .thumb{
-    -fx-background-color:#e0e0e0;
+
+.table-view:row-selection .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: #e0e0e0;
 }
-.table-view .table-row-cell:empty{
-    -fx-background-color:#FFFFFF;
-     -fx-border-color:#FFFFFF;
+
+.table-view .table-row-cell:empty {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #FFFFFF;
 }

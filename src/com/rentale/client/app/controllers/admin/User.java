@@ -60,7 +60,6 @@ public class User implements Initializable {
 
     @FXML
     public void newUser(ActionEvent event) {
-        System.out.println(userAnchor);
         backdrop = FXMLHelper.getView("backdrop");
         userAnchor = AnchorPaneHelper.setConstraint(userAnchor, backdrop);
         userAnchor.getChildren().add(backdrop);

@@ -27,12 +27,21 @@
     -fx-font-family: "Nunito";
 }
 
+.dashboard-menu {
+    -fx-text-fill: white;
+    -fx-background-radius: 5em;
+}
+
+.dashboard-menu > SVGPath {
+    -fx-fill: white;
+}
+
 .dashboard-menu:hover {
-    -fx-background-color: #a4d6c3;
+    -fx-background-color: #6cd6ab;
 }
 
 .dashboard-menu.active {
-    -fx-background-color: #6cd6ab;
+    -fx-background-color: #51d7a0;
 }
 
 .table-view {

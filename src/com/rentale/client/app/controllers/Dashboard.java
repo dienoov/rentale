@@ -1,6 +1,7 @@
 package com.rentale.client.app.controllers;
 
 import com.jfoenix.controls.JFXButton;
+import com.rentale.client.app.helpers.AnchorPaneHelper;
 import com.rentale.client.app.helpers.FXMLHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -16,10 +17,13 @@ public class Dashboard implements Initializable {
     private AnchorPane anchorContent;
 
     @FXML
-    private JFXButton dashboardBtn;
+    protected JFXButton dashboardBtn;
 
     @FXML
-    private JFXButton userBtn;
+    protected JFXButton venueBtn;
+
+    @FXML
+    protected JFXButton userBtn;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -31,29 +35,28 @@ public class Dashboard implements Initializable {
             setContent("admin/main");
         });
 
+        venueBtn.setOnAction(event -> {
+            setActiveMenu(venueBtn);
+            setContent("admin/venue");
+        });
+
         userBtn.setOnAction(event -> {
             setActiveMenu(userBtn);
             setContent("admin/user");
         });
     }
 
-    public void setConstraint(AnchorPane content) {
-        anchorContent.setTopAnchor(content, 0.0);
-        anchorContent.setLeftAnchor(content, 0.0);
-        anchorContent.setRightAnchor(content, 0.0);
-        anchorContent.setBottomAnchor(content, 0.0);
-    }
-
     public void setContent(String fileName) {
         AnchorPane content = FXMLHelper.getView(fileName);
-        setConstraint(content);
+        anchorContent = AnchorPaneHelper.setConstraint(anchorContent, content);
         anchorContent.getChildren().clear();
         anchorContent.getChildren().add(content);
     }
 
     public void setActiveMenu(JFXButton clickedMenu) {
-        userBtn.getStyleClass().removeIf(style -> style.equals("active"));
         dashboardBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        venueBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        userBtn.getStyleClass().removeIf(style -> style.equals("active"));
 
         clickedMenu.getStyleClass().add("active");
     }

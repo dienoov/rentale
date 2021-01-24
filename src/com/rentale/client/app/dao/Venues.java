@@ -1,18 +1,18 @@
 package com.rentale.client.app.dao;
 
-public class Venue {
+public class Venues {
 
     private String name;
     private String location;
     private String desc;
 
-    public Venue() {
+    public Venues() {
         this.name = "";
         this.location = "";
         this.desc = "";
     }
 
-    public Venue(String name, String location, String desc) {
+    public Venues(String name, String location, String desc) {
         this.name = name;
         this.location = location;
         this.desc = desc;

@@ -17,7 +17,7 @@
    <children>
       <HBox alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <JFXButton maxHeight="40.0" prefHeight="40.0" style="-fx-background-color: #16aaff;" text="Edit" textFill="WHITE">
+            <JFXButton maxHeight="40.0" onAction="#newUser" prefHeight="40.0" style="-fx-background-color: #16aaff;" text="Edit" textFill="WHITE">
                <graphic>
                   <SVGPath content="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" fill="#ffffff00" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                </graphic>

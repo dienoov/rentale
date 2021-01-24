@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
-<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextArea?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
@@ -14,11 +13,11 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.UserModal">
+<AnchorPane prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.UserModal">
    <children>
-      <ScrollPane layoutX="107.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0" style="-fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="798.0">
+      <ScrollPane layoutX="117.0" layoutY="154.0" prefHeight="200.0" prefWidth="200.0" style="-fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="798.0">
                <children>
                   <HBox alignment="CENTER_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
@@ -40,7 +39,7 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Label text="User">
+                        <Label text="Venue">
                            <font>
                               <Font name="Nunito Regular" size="24.0" />
                            </font>
@@ -50,20 +49,24 @@
                         <Insets left="25.0" right="25.0" />
                      </padding>
                   </HBox>
-                  <VBox alignment="CENTER" layoutX="299.0" layoutY="132.0" prefHeight="400.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+                  <VBox alignment="CENTER" layoutX="299.0" layoutY="132.0" prefHeight="700.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
                      <children>
-                        <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Email" />
-                        <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Password">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Name" />
+                              <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Location">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </JFXTextField>
+                           </children>
+                        </HBox>
+                        <JFXTextArea focusColor="#51d7a0" labelFloat="true" maxWidth="840.0" promptText="Description">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
-                        </JFXPasswordField>
-                        <JFXComboBox focusColor="#51d7a0" prefHeight="40.0" prefWidth="400.0" promptText="Role">
-                           <VBox.margin>
-                              <Insets top="40.0" />
-                           </VBox.margin>
-                        </JFXComboBox>
-                        <HBox alignment="CENTER_RIGHT" maxWidth="400.0" prefHeight="40.0" prefWidth="200.0">
+                        </JFXTextArea>
+                        <HBox alignment="CENTER_RIGHT" maxWidth="840.0" prefHeight="40.0" prefWidth="200.0">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
@@ -87,7 +90,7 @@
                   </VBox>
                </children>
             </AnchorPane>
-        </content>
+         </content>
       </ScrollPane>
    </children>
 </AnchorPane>

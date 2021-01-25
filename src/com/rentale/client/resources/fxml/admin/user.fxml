@@ -79,7 +79,7 @@
                   <Insets left="25.0" />
                </HBox.margin>
                <children>
-                  <Label text="Users Table">
+                  <Label style="-fx-font-size: 24px;" text="Users Table">
                      <font>
                         <Font name="Nunito Regular" size="24.0" />
                      </font>

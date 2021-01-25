@@ -29,6 +29,12 @@ public class Dashboard implements Initializable {
     protected JFXButton userBtn;
 
     @FXML
+    protected JFXButton rentReportBtn;
+
+    @FXML
+    protected JFXButton indemnityReportBtn;
+
+    @FXML
     protected JFXDrawer drawer;
 
     @Override
@@ -51,6 +57,16 @@ public class Dashboard implements Initializable {
             setContent("admin/user");
         });
 
+        rentReportBtn.setOnAction(event -> {
+            setActiveMenu(rentReportBtn);
+            setContent("admin/reports/rent");
+        });
+
+        indemnityReportBtn.setOnAction(event -> {
+            setActiveMenu(indemnityReportBtn);
+            setContent("admin/reports/indemnity");
+        });
+
         drawer = JFXDrawerHelper.setDrawer(drawer, "user_panel");
     }
 
@@ -65,6 +81,8 @@ public class Dashboard implements Initializable {
         dashboardBtn.getStyleClass().removeIf(style -> style.equals("active"));
         venueBtn.getStyleClass().removeIf(style -> style.equals("active"));
         userBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        rentReportBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        indemnityReportBtn.getStyleClass().removeIf(style -> style.equals("active"));
 
         clickedMenu.getStyleClass().add("active");
     }

@@ -79,7 +79,7 @@
                   <Insets bottom="5.0" top="15.0" />
                </VBox.margin>
             </Label>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" styleClass="dashboard-menu" text="Rents">
+            <JFXButton fx:id="rentReportBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" styleClass="dashboard-menu" text="Rents">
                <font>
                   <Font size="17.0" />
                </font>
@@ -87,7 +87,7 @@
                   <SVGPath content="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" fillRule="EVEN_ODD" />
                </graphic>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" styleClass="dashboard-menu" text="Indemnities">
+            <JFXButton fx:id="indemnityReportBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" styleClass="dashboard-menu" text="Indemnities">
                <font>
                   <Font size="17.0" />
                </font>

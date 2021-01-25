@@ -14,8 +14,8 @@
 
 <AnchorPane fx:id="homePane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1fbf7;" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Home">
    <children>
-      <JFXDrawer fx:id="bookDrawer" defaultDrawerSize="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
-      <JFXDrawer fx:id="drawer" defaultDrawerSize="360.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <JFXDrawer fx:id="bookDrawer" defaultDrawerSize="1280.0" layoutX="160.0" prefHeight="645.0" prefWidth="1520.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="360.0" direction="RIGHT" layoutX="210.0" layoutY="10.0" prefHeight="645.0" prefWidth="1470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
       <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <SVGPath content="M70.4,-22.1C77.5,-1,60.1,28.8,37.2,43.6C14.4,58.3,-13.8,58.1,-36.4,43.2C-59,28.4,-76,-0.9,-69,-21.8C-62,-42.7,-31,-55.1,0.3,-55.2C31.7,-55.3,63.3,-43.1,70.4,-22.1Z" fill="#51d7a0" scaleX="15.0" scaleY="15.0" />
@@ -59,7 +59,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </HBox>
-      <HBox alignment="CENTER" layoutX="1080.0" layoutY="620.0" onMouseClicked="#toggleBookDrawer" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+      <HBox alignment="CENTER" layoutX="1080.0" layoutY="620.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
          <children>
             <AnchorPane minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <HBox.margin>
@@ -69,7 +69,7 @@
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>
                <children>
-                  <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" onMouseClicked="#toggleBookDrawer" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
                         <SVGPath content="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" fill="TRANSPARENT" scaleX="10.0" scaleY="10.0" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
                            <VBox.margin>
@@ -96,7 +96,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </AnchorPane>
-            <AnchorPane minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+            <AnchorPane fx:id="rentBtn" minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>
@@ -128,7 +128,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </AnchorPane>
-            <AnchorPane minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+            <AnchorPane fx:id="indemnityBtn" minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>

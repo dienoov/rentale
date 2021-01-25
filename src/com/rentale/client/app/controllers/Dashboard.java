@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDrawer;
 import com.rentale.client.app.helpers.AnchorPaneHelper;
 import com.rentale.client.app.helpers.FXMLHelper;
+import com.rentale.client.app.helpers.JFXDrawerHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -50,7 +51,7 @@ public class Dashboard implements Initializable {
             setContent("admin/user");
         });
 
-        initDrawer();
+        drawer = JFXDrawerHelper.setDrawer(drawer, "user_panel");
     }
 
     public void setContent(String fileName) {
@@ -68,20 +69,9 @@ public class Dashboard implements Initializable {
         clickedMenu.getStyleClass().add("active");
     }
 
-    public void initDrawer() {
-        AnchorPane userPanel = FXMLHelper.getView("user_panel");
-        drawer.setSidePane(userPanel);
-    }
-
     @FXML
     public void toggleUserPanel(MouseEvent event) {
-        if (drawer.isOpened()) {
-            drawer.close();
-            drawer.toBack();
-        } else {
-            drawer.toFront();
-            drawer.open();
-        }
+        drawer = JFXDrawerHelper.toggleDrawer(drawer);
     }
 
 }

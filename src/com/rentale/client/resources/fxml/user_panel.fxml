@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.userPanel">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="85.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #343a40;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="dashboardBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d7a0" styleClass="dashboard-menu" text="Change Password">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <SVGPath content="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" fillRule="EVEN_ODD" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="rentBtn" alignment="BASELINE_LEFT" prefHeight="50.0" prefWidth="250.0" ripplerFill="#51d69f" styleClass="dashboard-menu" text="Log Out">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <SVGPath content="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" fillRule="EVEN_ODD" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#0000000d" height="25.0" radius="18.25" width="50.0" />
+         </effect>
+         <padding>
+            <Insets left="10.0" right="10.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

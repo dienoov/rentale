@@ -6,23 +6,20 @@ import javafx.scene.layout.AnchorPane;
 public class JFXDrawerHelper {
 
     public static JFXDrawer toggleDrawer(JFXDrawer drawer) {
-        if (drawer.isOpened()) {
+        if (drawer.isOpened())
             drawer.close();
-            drawer.setVisible(false);
-            drawer.setDisable(true);
-            drawer.toBack();
-        } else {
-            drawer.toFront();
+        else
             drawer.open();
-            drawer.setVisible(true);
-            drawer.setDisable(false);
-        }
+
         return drawer;
     }
 
     public static JFXDrawer setDrawer(JFXDrawer drawer, String fileName) {
         AnchorPane view = FXMLHelper.getView(fileName);
         drawer.setSidePane(view);
+        drawer.setDisable(true);
+        drawer.setOnDrawerOpened(jfxDrawerEvent -> drawer.setDisable(false));
+        drawer.setOnDrawerClosed(jfxDrawerEvent -> drawer.setDisable(true));
         return drawer;
     }
 

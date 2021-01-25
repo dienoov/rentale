@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXDrawer?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
@@ -11,9 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
 
-
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1fbf7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.resources.fxml.staff.Home">
+<AnchorPane fx:id="homePane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1fbf7;" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Home">
    <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="360.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="720.0" prefWidth="360.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
       <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <SVGPath content="M70.4,-22.1C77.5,-1,60.1,28.8,37.2,43.6C14.4,58.3,-13.8,58.1,-36.4,43.2C-59,28.4,-76,-0.9,-69,-21.8C-62,-42.7,-31,-55.1,0.3,-55.2C31.7,-55.3,63.3,-43.1,70.4,-22.1Z" fill="#51d7a0" scaleX="15.0" scaleY="15.0" />
@@ -34,7 +35,7 @@
             <DropShadow blurType="GAUSSIAN" color="#0000001a" height="250.0" radius="62.0" spread="0.5" width="0.0" />
          </effect>
       </HBox>
-      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" onMouseClicked="#toggleUserPanel" prefHeight="75.0" prefWidth="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <SVGPath content="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" fill="#333333" fillRule="EVEN_ODD" scaleX="2.5" scaleY="2.5">
                <HBox.margin>

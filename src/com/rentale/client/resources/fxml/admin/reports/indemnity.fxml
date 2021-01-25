@@ -60,7 +60,7 @@
                         <Font name="Nunito Regular" size="24.0" />
                      </font>
                   </Label>
-                  <Label text="Create an idemnity report">
+                  <Label text="Report for indemnity transactions">
                      <font>
                         <Font name="Nunito Regular" size="14.0" />
                      </font>

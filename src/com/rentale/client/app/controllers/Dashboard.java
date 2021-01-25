@@ -23,7 +23,13 @@ public class Dashboard implements Initializable {
     protected JFXButton dashboardBtn;
 
     @FXML
+    protected JFXButton rentBtn;
+
+    @FXML
     protected JFXButton venueBtn;
+
+    @FXML
+    protected JFXButton indemnityBtn;
 
     @FXML
     protected JFXButton userBtn;
@@ -47,9 +53,19 @@ public class Dashboard implements Initializable {
             setContent("admin/main");
         });
 
+        rentBtn.setOnAction(event -> {
+            setActiveMenu(rentBtn);
+            setContent("admin/rent");
+        });
+
         venueBtn.setOnAction(event -> {
             setActiveMenu(venueBtn);
             setContent("admin/venue");
+        });
+
+        indemnityBtn.setOnAction(event -> {
+            setActiveMenu(indemnityBtn);
+            setContent("admin/indemnity");
         });
 
         userBtn.setOnAction(event -> {
@@ -79,7 +95,9 @@ public class Dashboard implements Initializable {
 
     public void setActiveMenu(JFXButton clickedMenu) {
         dashboardBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        rentBtn.getStyleClass().removeIf(style -> style.equals("active"));
         venueBtn.getStyleClass().removeIf(style -> style.equals("active"));
+        indemnityBtn.getStyleClass().removeIf(style -> style.equals("active"));
         userBtn.getStyleClass().removeIf(style -> style.equals("active"));
         rentReportBtn.getStyleClass().removeIf(style -> style.equals("active"));
         indemnityReportBtn.getStyleClass().removeIf(style -> style.equals("active"));

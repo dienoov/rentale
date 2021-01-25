@@ -72,12 +72,12 @@
                               <Insets bottom="25.0" top="10.0" />
                            </VBox.margin>
                         </JFXTextField>
-                        <Label prefWidth="1062.0" text="What are you celebrating?">
+                        <Label prefWidth="1062.0" text="Which venue?">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Label>
-                        <JFXComboBox focusColor="#51d7a0" maxWidth="1062.0" prefHeight="40.0" prefWidth="1062.0" promptText="Select event type">
+                        <JFXComboBox focusColor="#51d7a0" maxWidth="1062.0" prefHeight="40.0" prefWidth="1062.0" promptText="Select venue">
                            <VBox.margin>
                               <Insets bottom="25.0" top="10.0" />
                            </VBox.margin>
@@ -133,7 +133,7 @@
                               </JFXTextField>
                            </children>
                         </HBox>
-                        <JFXTextField focusColor="#51d7a0" maxWidth="1062.0" prefHeight="40.0" promptText="Yout email address">
+                        <JFXTextField focusColor="#51d7a0" maxWidth="1062.0" prefHeight="40.0" promptText="Your email address">
                            <font>
                               <Font size="16.0" />
                            </font>

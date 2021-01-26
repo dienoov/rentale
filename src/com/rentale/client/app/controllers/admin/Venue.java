@@ -2,6 +2,7 @@ package com.rentale.client.app.controllers.admin;
 
 import com.rentale.client.app.helpers.AnchorPaneHelper;
 import com.rentale.client.app.helpers.FXMLHelper;
+import com.rentale.client.app.helpers.ModalHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,13 +30,8 @@ public class Venue implements Initializable {
 
     @FXML
     public void newAct(ActionEvent event) {
-        backdrop = FXMLHelper.getView("backdrop");
-        managePane = AnchorPaneHelper.setConstraint(managePane, backdrop);
-        managePane.getChildren().add(backdrop);
-
-        manageModal = FXMLHelper.getView("admin/venue_modal");
-        backdrop = AnchorPaneHelper.setConstraint(backdrop, manageModal, 100.0);
-        backdrop.getChildren().add(manageModal);
+        double[] constraints = {250.0, 150.0};
+        managePane = ModalHelper.setModal(managePane, "admin/venue_modal", constraints);
     }
 
     public void closeModal(MouseEvent mouseEvent) {

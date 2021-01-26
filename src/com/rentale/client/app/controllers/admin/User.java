@@ -3,6 +3,7 @@ package com.rentale.client.app.controllers.admin;
 import com.rentale.client.app.dao.Users;
 import com.rentale.client.app.helpers.AnchorPaneHelper;
 import com.rentale.client.app.helpers.FXMLHelper;
+import com.rentale.client.app.helpers.ModalHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -60,13 +61,8 @@ public class User implements Initializable {
 
     @FXML
     public void newUser(ActionEvent event) {
-        backdrop = FXMLHelper.getView("backdrop");
-        userAnchor = AnchorPaneHelper.setConstraint(userAnchor, backdrop);
-        userAnchor.getChildren().add(backdrop);
-
-        modalUser = FXMLHelper.getView("admin/user_modal");
-        backdrop = AnchorPaneHelper.setConstraint(backdrop, modalUser, 100.0);
-        backdrop.getChildren().add(modalUser);
+        double[] constraints = {300.0, 200.0};
+        userAnchor = ModalHelper.setModal(userAnchor, "admin/user_modal", constraints);
     }
 
     public void deleteUser(ActionEvent event) {
@@ -74,7 +70,7 @@ public class User implements Initializable {
     }
 
     public void closeModal(MouseEvent mouseEvent) {
-        Scene scene = (Scene) ((Node)mouseEvent.getSource()).getScene();
+        Scene scene = (Scene) ((Node) mouseEvent.getSource()).getScene();
         AnchorPane userAnchor = (AnchorPane) scene.lookup("#userAnchor");
         userAnchor.getChildren().remove(userAnchor.lookup("#backdrop"));
     }

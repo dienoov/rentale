@@ -68,12 +68,15 @@
                               <Insets top="40.0" />
                            </VBox.margin>
                            <children>
-                              <JFXButton prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: #6c757d;" text="Reset" textFill="WHITE">
+                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Reset" textFill="WHITE">
                                  <HBox.margin>
                                     <Insets right="10.0" />
                                  </HBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" fill="WHITE" />
+                                 </graphic>
                               </JFXButton>
-                              <JFXButton maxWidth="80.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" text="Save" textFill="WHITE">
+                              <JFXButton maxWidth="80.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" styleClass="rounded-btn" text="Save" textFill="WHITE">
                                  <graphic>
                                     <SVGPath content="M5 13l4 4L19 7" fill="#ffffff00" scaleX="0.8" scaleY="0.8" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                                  </graphic>

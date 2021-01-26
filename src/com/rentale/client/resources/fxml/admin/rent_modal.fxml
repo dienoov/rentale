@@ -7,11 +7,13 @@
 <?import com.jfoenix.controls.JFXTextField?>
 <?import com.jfoenix.controls.JFXTimePicker?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="1280.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Form">
@@ -146,26 +148,40 @@
                               <Font size="16.0" />
                            </font>
                         </JFXTextField>
-                        <HBox prefHeight="40.0" prefWidth="200.0">
+                        <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="200.0">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
                            <children>
-                              <JFXButton prefHeight="40.0" prefWidth="1062.0" style="-fx-background-color: #d92550;" styleClass="rounded-btn" text="Cancel" textFill="WHITE">
+                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Back" textFill="WHITE">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
-                                 <HBox.margin>
-                                    <Insets right="5.0" />
-                                 </HBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" fill="WHITE" fillRule="EVEN_ODD" />
+                                 </graphic>
                               </JFXButton>
-                              <JFXButton prefHeight="40.0" prefWidth="1062.0" style="-fx-background-color: #51d7a0;" styleClass="rounded-btn" text="Save" textFill="WHITE">
+                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #d92550;" styleClass="rounded-btn" text="Cancel" textFill="WHITE">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
                                  <HBox.margin>
-                                    <Insets left="5.0" />
+                                    <Insets left="10.0" right="10.0" />
                                  </HBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M13.477 14.89A6 6 0 015.11 6.524l8.367 8.368zm1.414-1.414L6.524 5.11a6 6 0 018.367 8.367zM18 10a8 8 0 11-16 0 8 8 0 0116 0z" fill="WHITE" fillRule="EVEN_ODD" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0;" styleClass="rounded-btn" text="Save" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <graphic>
+                                    <SVGPath content="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill="WHITE" fillRule="EVEN_ODD" />
+                                 </graphic>
                               </JFXButton>
                            </children>
                         </HBox>
@@ -175,8 +191,41 @@
                      </padding>
                   </VBox>
                </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
             </AnchorPane>
          </content>
       </ScrollPane>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Rent Transaction">
+               <font>
+                  <Font name="Nunito Regular" size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="24.0" layoutY="24.0" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SVGPath fx:id="closeModalBtn" content="M6 18L18 6M6 6l12 12" scaleX="0.75" scaleY="0.75" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </SVGPath>
+         </children>
+         <padding>
+            <Insets left="25.0" right="25.0" />
+         </padding>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </HBox>
    </children>
 </AnchorPane>

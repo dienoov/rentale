@@ -24,6 +24,12 @@ public class ModalHelper {
         return backdrop;
     }
 
+    public static AnchorPane setModalOnly(AnchorPane backdrop, AnchorPane modal, double[] constraints) {
+        backdrop = AnchorPaneHelper.setConstraint(backdrop, modal, constraints);
+        backdrop.getChildren().add(modal);
+        return backdrop;
+    }
+
     public static AnchorPane setModalOnly(AnchorPane backdrop, AnchorPane modal) {
         return setModalOnly(backdrop, modal, 100.0);
     }
@@ -50,6 +56,20 @@ public class ModalHelper {
     public static AnchorPane setModal(AnchorPane parentPane, String modal) {
         AnchorPane backdrop = getBackdrop();
         backdrop = setModalOnly(backdrop, FXMLHelper.getView(modal));
+        parentPane = setBackdrop(parentPane, backdrop);
+        return parentPane;
+    }
+
+    public static AnchorPane setModal(AnchorPane parentPane, String modal, double constraint) {
+        AnchorPane backdrop = getBackdrop();
+        backdrop = setModalOnly(backdrop, FXMLHelper.getView(modal), constraint);
+        parentPane = setBackdrop(parentPane, backdrop);
+        return parentPane;
+    }
+
+    public static AnchorPane setModal(AnchorPane parentPane, String modal, double[] constraints) {
+        AnchorPane backdrop = getBackdrop();
+        backdrop = setModalOnly(backdrop, FXMLHelper.getView(modal), constraints);
         parentPane = setBackdrop(parentPane, backdrop);
         return parentPane;
     }

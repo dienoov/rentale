@@ -97,9 +97,8 @@
             <children>
                 <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
                     <columns>
-                        <TableColumn fx:id="id" prefWidth="150.0" text="ID" />
                         <TableColumn fx:id="name" prefWidth="369.0" text="Name" />
-                  <TableColumn prefWidth="174.0" text="Location" />
+                  <TableColumn fx:id="location" prefWidth="174.0" text="Location" />
                         <TableColumn fx:id="desc" minWidth="239.0" prefWidth="239.0" text="Description" />
                     </columns>
                     <VBox.margin>

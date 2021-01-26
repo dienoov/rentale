@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -12,8 +13,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.rentale.client.app.controllers.admin.Main" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="600.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.Main">
    <children>
       <VBox layoutX="1190.0" layoutY="530.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -137,16 +137,17 @@
                   </Pane>
                </children>
             </HBox>
-            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
-               <columns>
-                  <TableColumn fx:id="name" prefWidth="150.0" text="Name" />
-                  <TableColumn fx:id="location" prefWidth="250.0" text="Location" />
-                  <TableColumn fx:id="desc" minWidth="500.0" prefWidth="-1.0" text="Description" />
-               </columns>
+            <LineChart fx:id="transactionChart" title="Transaction">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xChart" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yChart" side="LEFT" />
+              </yAxis>
                <VBox.margin>
-                  <Insets left="35.0" right="35.0" top="35.0" />
+                  <Insets bottom="10.0" left="35.0" right="35.0" top="10.0" />
                </VBox.margin>
-            </TableView>
+            </LineChart>
          </children>
       </VBox>
    </children>

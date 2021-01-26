@@ -23,7 +23,7 @@ public class Login implements Initializable {
 
     @FXML
     public void authLogin(ActionEvent event) throws Exception{
-        String userEmail = email.getText().toString();
+        String userEmail = email.getText();
 
         String viewSource;
         if(userEmail.equals("admin"))

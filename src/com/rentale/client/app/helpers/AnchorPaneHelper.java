@@ -49,4 +49,12 @@ public class AnchorPaneHelper {
         return parent;
     }
 
+    public static AnchorPane setContent(AnchorPane anchorPane, String fileName) {
+        AnchorPane content = FXMLHelper.getView(fileName);
+        anchorPane = setConstraint(anchorPane, content);
+        anchorPane.getChildren().clear();
+        anchorPane.getChildren().add(content);
+        return anchorPane;
+    }
+
 }

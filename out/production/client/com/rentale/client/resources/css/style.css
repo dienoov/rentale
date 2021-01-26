@@ -135,6 +135,10 @@
     -fx-font-size: 16px;
 }
 
+.jfx-text-area {
+    -fx-font-size: 16px;
+}
+
 .jfx-combo-box {
     -fx-font-size: 16px;
 }
@@ -149,4 +153,5 @@
 
 .rounded-btn {
     -fx-background-radius: 2.5em;
+    -fx-font-size: 16px;
 }

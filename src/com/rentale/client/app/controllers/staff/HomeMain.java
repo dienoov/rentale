@@ -22,10 +22,24 @@ public class HomeMain implements Initializable {
     }
 
     @FXML
-    public void book(MouseEvent event){
-        Scene scene = ((Node)event.getSource()).getScene();
+    public void book(MouseEvent event) {
+        Scene scene = ((Node) event.getSource()).getScene();
         contentPane = (AnchorPane) scene.lookup("#contentPane");
         contentPane = AnchorPaneHelper.setContent(contentPane, "staff/form");
+    }
+
+    @FXML
+    public void rentPayment(MouseEvent event) {
+        Scene scene = ((Node) event.getSource()).getScene();
+        contentPane = (AnchorPane) scene.lookup("#contentPane");
+        contentPane = AnchorPaneHelper.setContent(contentPane, "staff/rent_payment");
+    }
+
+    @FXML
+    public void indemnityPayment(MouseEvent event) {
+        Scene scene = ((Node) event.getSource()).getScene();
+        contentPane = (AnchorPane) scene.lookup("#contentPane");
+        contentPane = AnchorPaneHelper.setContent(contentPane, "staff/indemnity_payment");
     }
 
 }

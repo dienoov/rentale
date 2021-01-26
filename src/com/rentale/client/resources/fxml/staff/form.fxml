@@ -163,7 +163,7 @@
                </children></AnchorPane>
         </content>
       </ScrollPane>
-      <JFXButton fx:id="backBtn" style="-fx-background-color: #51d7a0;" styleClass="rounded-btn" text="Back" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+      <JFXButton fx:id="backBtn" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Back" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
          <graphic>
             <SVGPath content="M10 19l-7-7m0 0l7-7m-7 7h18" fill="TRANSPARENT" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
          </graphic>

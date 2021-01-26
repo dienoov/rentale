@@ -66,7 +66,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </AnchorPane>
-            <AnchorPane fx:id="rentBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+            <AnchorPane fx:id="rentBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" onMouseClicked="#rentPayment" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>
@@ -101,7 +101,7 @@
                   <Insets left="40.0" right="40.0" />
                </HBox.margin>
             </AnchorPane>
-            <AnchorPane fx:id="indemnityBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+            <AnchorPane fx:id="indemnityBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" onMouseClicked="#indemnityPayment" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>

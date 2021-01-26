@@ -13,7 +13,7 @@
    <children>
       <VBox fx:id="cover" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="652.0" prefWidth="1271.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Search Rent Transaction" />
+            <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Search Indemnity Transaction" />
             <HBox alignment="CENTER" maxWidth="650.0" prefHeight="75.0" prefWidth="650.0">
                <children>
                   <TextField maxWidth="600.0" prefHeight="40.0" prefWidth="550.0" promptText="Search by transaction number" style="-fx-background-color: #ffffff; -fx-background-radius: 2.5em 0 0 2.5em;">

@@ -17,10 +17,14 @@ public class Home implements Initializable {
     @FXML
     protected JFXDrawer bookDrawer;
 
+    @FXML
+    protected JFXDrawer searchDrawer;
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         drawer = JFXDrawerHelper.setDrawer(drawer, "user_panel");
         bookDrawer = JFXDrawerHelper.setDrawer(bookDrawer, "staff/form");
+        searchDrawer = JFXDrawerHelper.setDrawer(searchDrawer, "staff/rent_payment");
     }
 
     @FXML
@@ -31,6 +35,11 @@ public class Home implements Initializable {
     @FXML
     public void toggleBookDrawer(MouseEvent event) {
         bookDrawer = JFXDrawerHelper.toggleDrawer(bookDrawer);
+    }
+
+    @FXML
+    public void toggleSearchDrawer(MouseEvent event) {
+        searchDrawer = JFXDrawerHelper.toggleDrawer(searchDrawer);
     }
 
 }

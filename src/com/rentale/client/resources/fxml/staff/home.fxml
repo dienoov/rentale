@@ -94,7 +94,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </AnchorPane>
-            <AnchorPane fx:id="rentBtn" minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+            <AnchorPane fx:id="rentBtn" minWidth="500.0" onMouseClicked="#toggleSearchDrawer" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
                <effect>
                   <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
                </effect>
@@ -168,5 +168,6 @@
       </HBox>
       <JFXDrawer fx:id="bookDrawer" defaultDrawerSize="1280.0" layoutX="160.0" prefHeight="645.0" prefWidth="1520.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
       <JFXDrawer fx:id="drawer" defaultDrawerSize="360.0" direction="RIGHT" layoutX="210.0" layoutY="10.0" prefHeight="645.0" prefWidth="1470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <JFXDrawer fx:id="searchDrawer" direction="TOP" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

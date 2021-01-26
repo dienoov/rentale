@@ -122,3 +122,31 @@
     -fx-background-color: #FFFFFF;
     -fx-border-color: #FFFFFF;
 }
+
+.button {
+    -fx-cursor: hand;
+}
+
+.jfx-text-field {
+    -fx-font-size: 16px;
+}
+
+.jfx-password-field {
+    -fx-font-size: 16px;
+}
+
+.jfx-combo-box {
+    -fx-font-size: 16px;
+}
+
+.jfx-date-picker {
+    -fx-font-size: 16px;
+}
+
+.jfx-time-picker {
+    -fx-font-size: 16px;
+}
+
+.rounded-btn {
+    -fx-background-radius: 2.5em;
+}

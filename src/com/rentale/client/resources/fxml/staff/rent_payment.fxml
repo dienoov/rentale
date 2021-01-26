@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+
+<AnchorPane prefHeight="120.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="cover" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="652.0" prefWidth="1271.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxWidth="650.0" prefHeight="75.0" prefWidth="650.0">
+               <children>
+                  <TextField maxWidth="600.0" prefHeight="40.0" prefWidth="550.0" promptText="Search by transaction number" style="-fx-background-color: #ffffff; -fx-background-radius: 2.5em 0 0 2.5em;">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 0 2.5em 2.5em 0;" text="Search" textFill="WHITE">
+                     <graphic>
+                        <SVGPath content="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" fill="WHITE" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

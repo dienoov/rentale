@@ -5,10 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.chart.CategoryAxis;
-import javafx.scene.chart.LineChart;
-import javafx.scene.chart.NumberAxis;
-import javafx.scene.chart.XYChart;
+import javafx.scene.chart.*;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -26,6 +23,15 @@ public class Main implements Initializable {
 
     @FXML
     private NumberAxis yChart;
+
+    @FXML
+    private BarChart<?, ?> rentBar;
+
+    @FXML
+    private CategoryAxis xBar;
+
+    @FXML
+    private NumberAxis yBar;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -61,6 +67,23 @@ public class Main implements Initializable {
         series2.setName("Indemnity");
 
         transactionChart.getData().addAll(series, series2);
+
+        XYChart.Series barSeries = new XYChart.Series();
+        barSeries.getData().add(new XYChart.Data("Jan", 5));
+        barSeries.getData().add(new XYChart.Data("Feb", 7));
+        barSeries.getData().add(new XYChart.Data("Mar", 2));
+        barSeries.getData().add(new XYChart.Data("Apr", 2));
+        barSeries.getData().add(new XYChart.Data("May", 6));
+        barSeries.getData().add(new XYChart.Data("Jun", 5));
+        barSeries.getData().add(new XYChart.Data("Jul", 8));
+        barSeries.getData().add(new XYChart.Data("Aug", 8));
+        barSeries.getData().add(new XYChart.Data("Sep", 2));
+        barSeries.getData().add(new XYChart.Data("Oct", 9));
+        barSeries.getData().add(new XYChart.Data("Nov", 8));
+        barSeries.getData().add(new XYChart.Data("Dec", 7));
+        barSeries.setName("Rent");
+
+        rentBar.getData().addAll(barSeries);
     }
 
 }

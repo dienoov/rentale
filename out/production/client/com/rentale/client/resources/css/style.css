@@ -155,3 +155,23 @@
     -fx-background-radius: 2.5em;
     -fx-font-size: 16px;
 }
+
+.default-color0.chart-series-line {
+    -fx-stroke: #3ac47d;
+}
+
+.default-color1.chart-series-line {
+    -fx-stroke: #d92550;
+}
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: #3ac47d, white;
+}
+
+.default-color1.chart-line-symbol {
+    -fx-background-color: #d92550, white;
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #3f6ad8;
+}

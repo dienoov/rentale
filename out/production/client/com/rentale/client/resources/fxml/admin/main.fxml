@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
@@ -137,7 +138,7 @@
                   </Pane>
                </children>
             </HBox>
-            <LineChart fx:id="transactionChart" title="Transaction">
+            <LineChart fx:id="transactionChart" maxHeight="300.0" title="Transaction">
               <xAxis>
                 <CategoryAxis side="BOTTOM" fx:id="xChart" />
               </xAxis>
@@ -145,9 +146,20 @@
                 <NumberAxis fx:id="yChart" side="LEFT" />
               </yAxis>
                <VBox.margin>
-                  <Insets bottom="10.0" left="35.0" right="35.0" top="10.0" />
+                  <Insets bottom="20.0" left="35.0" right="35.0" top="20.0" />
                </VBox.margin>
             </LineChart>
+            <BarChart fx:id="rentBar" maxHeight="300.0" title="Rent">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xBar" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yBar" side="LEFT" />
+              </yAxis>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="35.0" right="35.0" top="20.0" />
+               </VBox.margin>
+            </BarChart>
          </children>
       </VBox>
    </children>

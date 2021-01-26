@@ -4,8 +4,11 @@ import com.jfoenix.controls.JFXDrawer;
 import com.rentale.client.app.helpers.AnchorPaneHelper;
 import com.rentale.client.app.helpers.FXMLHelper;
 import com.rentale.client.app.helpers.JFXDrawerHelper;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
@@ -18,12 +21,6 @@ public class Home implements Initializable {
     protected JFXDrawer drawer;
 
     @FXML
-    protected JFXDrawer bookDrawer;
-
-    @FXML
-    protected JFXDrawer searchDrawer;
-
-    @FXML
     protected AnchorPane contentPane;
 
     @Override
@@ -31,8 +28,6 @@ public class Home implements Initializable {
         contentPane = AnchorPaneHelper.setContent(contentPane, "staff/home_menu");
 
         drawer = JFXDrawerHelper.setDrawer(drawer, "user_panel");
-        bookDrawer = JFXDrawerHelper.setDrawer(bookDrawer, "staff/form");
-        searchDrawer = JFXDrawerHelper.setDrawer(searchDrawer, "staff/rent_payment");
     }
 
     @FXML
@@ -41,18 +36,10 @@ public class Home implements Initializable {
     }
 
     @FXML
-    public void toggleBookDrawer(MouseEvent event) {
-        bookDrawer = JFXDrawerHelper.toggleDrawer(bookDrawer);
-    }
-
-    @FXML
-    public void toggleSearchDrawer(MouseEvent event) {
-        searchDrawer = JFXDrawerHelper.toggleDrawer(searchDrawer);
-    }
-
-    @FXML
-    public void routeBook(MouseEvent event) {
-
+    public static void backToMenu(ActionEvent event) {
+        Scene scene = ((Node)event.getSource()).getScene();
+        AnchorPane contentPane = (AnchorPane) scene.lookup("#contentPane");
+        contentPane = AnchorPaneHelper.setContent(contentPane, "staff/home_menu");
     }
 
 }

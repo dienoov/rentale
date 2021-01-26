@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="1280.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Form">
@@ -162,5 +163,10 @@
                </children></AnchorPane>
         </content>
       </ScrollPane>
+      <JFXButton fx:id="backBtn" style="-fx-background-color: #51d7a0;" styleClass="rounded-btn" text="Back" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <graphic>
+            <SVGPath content="M10 19l-7-7m0 0l7-7m-7 7h18" fill="TRANSPARENT" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>

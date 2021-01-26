@@ -14,11 +14,140 @@
 
 <AnchorPane fx:id="homePane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f1fbf7;" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Home">
    <children>
-      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutY="75.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
          <children>
-            <SVGPath content="M70.4,-22.1C77.5,-1,60.1,28.8,37.2,43.6C14.4,58.3,-13.8,58.1,-36.4,43.2C-59,28.4,-76,-0.9,-69,-21.8C-62,-42.7,-31,-55.1,0.3,-55.2C31.7,-55.3,63.3,-43.1,70.4,-22.1Z" fill="#51d7a0" scaleX="15.0" scaleY="15.0" />
+            <HBox alignment="CENTER" prefHeight="645.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SVGPath content="M42,-70.1C51.6,-59.2,54.6,-42.8,59.5,-28.3C64.5,-13.8,71.3,-1.3,69.9,10.2C68.4,21.6,58.7,32,49.2,42.2C39.7,52.5,30.5,62.6,18.4,68.9C6.3,75.3,-8.7,77.9,-18.7,71.4C-28.8,65,-33.9,49.4,-45.8,38.3C-57.7,27.1,-76.4,20.4,-80.4,9.9C-84.4,-0.5,-73.9,-14.7,-62.6,-24.1C-51.4,-33.5,-39.4,-38.2,-28.9,-48.6C-18.4,-59.1,-9.2,-75.3,3.5,-80.8C16.2,-86.2,32.4,-80.9,42,-70.1Z" fill="#51d7a0" rotate="45.0" scaleX="12.0" scaleY="12.0">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin></SVGPath>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="645.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <SVGPath content="M42,-70.1C51.6,-59.2,54.6,-42.8,59.5,-28.3C64.5,-13.8,71.3,-1.3,69.9,10.2C68.4,21.6,58.7,32,49.2,42.2C39.7,52.5,30.5,62.6,18.4,68.9C6.3,75.3,-8.7,77.9,-18.7,71.4C-28.8,65,-33.9,49.4,-45.8,38.3C-57.7,27.1,-76.4,20.4,-80.4,9.9C-84.4,-0.5,-73.9,-14.7,-62.6,-24.1C-51.4,-33.5,-39.4,-38.2,-28.9,-48.6C-18.4,-59.1,-9.2,-75.3,3.5,-80.8C16.2,-86.2,32.4,-80.9,42,-70.1Z" fill="#88d6b7" rotate="45.0" scaleX="10.0" scaleY="10.0">
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                  </SVGPath>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
+                     </effect>
+                     <children>
+                        <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" onMouseClicked="#toggleBookDrawer" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <SVGPath content="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" fill="TRANSPARENT" scaleX="7.5" scaleY="7.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND">
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </SVGPath>
+                              <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 24px;" text="Book a Venue" textFill="#51d7a0" />
+                                    <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </SVGPath>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rentBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" onMouseClicked="#toggleSearchDrawer" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
+                     </effect>
+                     <children>
+                        <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <SVGPath content="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" fill="TRANSPARENT" scaleX="7.5" scaleY="7.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND">
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </SVGPath>
+                              <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 24px;" text="Rent Payment" textFill="#51d7a0" />
+                                    <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </SVGPath>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="indemnityBtn" maxHeight="400.0" maxWidth="400.0" minWidth="200.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
+                     </effect>
+                     <children>
+                        <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <SVGPath content="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" fill="TRANSPARENT" scaleX="7.5" scaleY="7.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND">
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </SVGPath>
+                              <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 24px;" text="Indemnity Payment" textFill="#51d7a0" />
+                                    <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
+                                       <HBox.margin>
+                                          <Insets left="8.0" top="8.0" />
+                                       </HBox.margin>
+                                    </SVGPath>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="100.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="150.0" left="50.0" right="50.0" top="150.0" />
+               </padding>
+            </HBox>
          </children>
-      </HBox>
+      </AnchorPane>
       <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="200.0" style="-fx-background-color: #fafbfc;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -56,115 +185,6 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
-      </HBox>
-      <HBox alignment="CENTER" layoutX="1080.0" layoutY="620.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
-         <children>
-            <AnchorPane minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets right="40.0" />
-               </HBox.margin>
-               <effect>
-                  <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
-               </effect>
-               <children>
-                  <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" onMouseClicked="#toggleBookDrawer" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <SVGPath content="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" fill="TRANSPARENT" scaleX="10.0" scaleY="10.0" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </SVGPath>
-                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Book a Venue" textFill="#51d7a0" />
-                              <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" scaleX="1.5" scaleY="1.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                                 <HBox.margin>
-                                    <Insets left="8.0" top="16.0" />
-                                 </HBox.margin>
-                              </SVGPath>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-               </children>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </AnchorPane>
-            <AnchorPane fx:id="rentBtn" minWidth="500.0" onMouseClicked="#toggleSearchDrawer" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
-               <effect>
-                  <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
-               </effect>
-               <children>
-                  <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <SVGPath content="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" fill="TRANSPARENT" scaleX="10.0" scaleY="10.0" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </SVGPath>
-                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Rent Payment" textFill="#51d7a0" />
-                              <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" scaleX="1.5" scaleY="1.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                                 <HBox.margin>
-                                    <Insets left="8.0" top="16.0" />
-                                 </HBox.margin>
-                              </SVGPath>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-               </children>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </AnchorPane>
-            <AnchorPane fx:id="indemnityBtn" minWidth="500.0" prefHeight="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" HBox.hgrow="ALWAYS">
-               <effect>
-                  <DropShadow blurType="GAUSSIAN" color="#0000001a" height="48.32" radius="21.3825" spread="0.21" width="39.21" />
-               </effect>
-               <children>
-                  <VBox alignment="CENTER" layoutX="150.0" layoutY="-39.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                     <children>
-                        <SVGPath content="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" fill="TRANSPARENT" scaleX="10.0" scaleY="10.0" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </SVGPath>
-                        <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
-                           <children>
-                              <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Indemnity Payment" textFill="#51d7a0" />
-                              <SVGPath content="M9 5l7 7-7 7" fill="TRANSPARENT" scaleX="1.5" scaleY="1.5" stroke="#51d7a0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0">
-                                 <HBox.margin>
-                                    <Insets left="8.0" top="16.0" />
-                                 </HBox.margin>
-                              </SVGPath>
-                           </children>
-                           <VBox.margin>
-                              <Insets top="100.0" />
-                           </VBox.margin>
-                        </HBox>
-                     </children>
-                  </VBox>
-               </children>
-               <HBox.margin>
-                  <Insets left="40.0" />
-               </HBox.margin>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </AnchorPane>
-         </children>
-         <padding>
-            <Insets bottom="150.0" left="50.0" right="50.0" top="150.0" />
-         </padding>
       </HBox>
       <JFXDrawer fx:id="bookDrawer" defaultDrawerSize="1280.0" layoutX="160.0" prefHeight="645.0" prefWidth="1520.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />
       <JFXDrawer fx:id="drawer" defaultDrawerSize="360.0" direction="RIGHT" layoutX="210.0" layoutY="10.0" prefHeight="645.0" prefWidth="1470.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0" />

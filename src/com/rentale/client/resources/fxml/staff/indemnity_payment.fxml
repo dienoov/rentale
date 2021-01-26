@@ -2,37 +2,240 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.staff.Form">
    <children>
       <VBox fx:id="cover" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="652.0" prefWidth="1271.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 36px;" text="Search Indemnity Transaction" />
-            <HBox alignment="CENTER" maxWidth="650.0" prefHeight="75.0" prefWidth="650.0">
+            <HBox alignment="CENTER" maxWidth="650.0" prefHeight="50.0" prefWidth="650.0" style="-fx-background-radius: 2.5em;">
                <children>
-                  <TextField maxWidth="600.0" prefHeight="40.0" prefWidth="550.0" promptText="Search by transaction number" style="-fx-background-color: #ffffff; -fx-background-radius: 2.5em 0 0 2.5em;">
+                  <TextField maxWidth="600.0" prefHeight="50.0" prefWidth="550.0" promptText="Search by transaction number" style="-fx-background-color: #ffffff; -fx-background-radius: 2.5em 0 0 2.5em;">
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </TextField>
-                  <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 0 2.5em 2.5em 0;" text="Search" textFill="WHITE">
+                  <JFXButton prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 0 2.5em 2.5em 0;" text="Search" textFill="WHITE">
                      <graphic>
                         <SVGPath content="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" fill="WHITE" />
                      </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </JFXButton>
                </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+               </effect>
             </HBox>
          </children>
          <padding>
             <Insets top="100.0" />
          </padding>
       </VBox>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 2.5em;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="275.0">
+         <effect>
+            <DropShadow color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+         </effect>
+         <children>
+            <VBox alignment="CENTER" layoutX="78.0" layoutY="14.0" prefHeight="320.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </padding>
+               <children>
+                  <Label style="-fx-font-family: 'Montserrat Bold'; -fx-font-size: 32px;" text="IN21010001" />
+                  <Label style="-fx-font-family: Nunito; -fx-font-size: 42px;" text="Wedding Party" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Date :" textFill="#959595">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="27/01/2021">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Time :" textFill="#959595">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="12:00 AM">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Customer Name :" textFill="#959595">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="John Doe">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Customer Email :" textFill="#959595">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="johndoe@email.com">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label style="-fx-font-family: 'Nunito Bold'; -fx-font-size: 28px;" text="Venue" textFill="#51d7a0">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Nama Gedung" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Jl. Melati No. 1" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Malang, Jawa Timur" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Total Amount :" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="IDR500.000.000,-">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Amount Paid :" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="IDR0,-">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Balance Due :" textFill="#959595">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="IDR500.000.000,-">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="75.0" style="-fx-background-radius: 2.5em;" VBox.vgrow="ALWAYS">
+                     <children>
+                        <TextField prefHeight="60.0" promptText="Payment amount" style="-fx-background-color: #ffffff; -fx-background-radius: 2.5em 0 0 2.5em;" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </TextField>
+                        <JFXButton prefHeight="60.0" prefWidth="100.0" style="-fx-background-color: #51d7a0; -fx-background-radius: 0 2.5em 2.5em 0;" text="Pay" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <effect>
+                        <DropShadow color="#0000001a" height="25.0" radius="12.0" width="25.0" />
+                     </effect>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
       <JFXButton fx:id="backBtn" layoutX="10.0" layoutY="10.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Back" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
          <graphic>
             <SVGPath content="M10 19l-7-7m0 0l7-7m-7 7h18" fill="TRANSPARENT" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" />

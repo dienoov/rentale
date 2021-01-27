@@ -20,6 +20,7 @@ public class Indemnity implements Initializable {
 
     @FXML
     public void editAct(ActionEvent event) {
-        contentPane = ModalHelper.setModal(contentPane, "admin/indemnity_modal");
+        double[] constraints = {300.0, 200.0};
+        contentPane = ModalHelper.setModal(contentPane, "admin/indemnity_modal", constraints);
     }
 }

@@ -23,7 +23,8 @@ public class Rent implements Initializable {
 
     @FXML
     public void editAct(ActionEvent event) {
-        contentPane = ModalHelper.setModal(contentPane, "admin/rent_modal");
+        double[] constraints = {200.0, 100.0};
+        contentPane = ModalHelper.setModal(contentPane, "admin/rent_modal", constraints);
     }
 
 }

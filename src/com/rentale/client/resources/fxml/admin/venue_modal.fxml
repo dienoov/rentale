@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rentale.client.app.controllers.admin.UserModal">
+<AnchorPane prefHeight="800.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ScrollPane layoutX="117.0" layoutY="154.0" prefHeight="200.0" prefWidth="200.0" style="-fx-fit-to-width: true;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <content>
@@ -53,15 +53,16 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Name" />
-                              <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Location">
+                              <JFXTextField fx:id="name" focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Name" />
+                              <JFXTextField fx:id="location" focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" prefWidth="400.0" promptText="Location">
                                  <HBox.margin>
                                     <Insets left="40.0" />
                                  </HBox.margin>
                               </JFXTextField>
                            </children>
                         </HBox>
-                        <JFXTextArea focusColor="#51d7a0" labelFloat="true" maxWidth="840.0" promptText="Description">
+                        <JFXTextField fx:id="address" focusColor="#51d7a0" labelFloat="true" maxWidth="840.0" prefHeight="40.0" prefWidth="400.0" promptText="Address" />
+                        <JFXTextArea fx:id="description" focusColor="#51d7a0" labelFloat="true" maxWidth="840.0" promptText="Description">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
@@ -71,12 +72,12 @@
                               <Insets top="40.0" />
                            </VBox.margin>
                            <children>
-                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Back" textFill="WHITE">
+                              <JFXButton fx:id="back" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Back" textFill="WHITE">
                                  <graphic>
                                     <SVGPath content="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0zM12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" fill="WHITE" />
                                  </graphic>
                               </JFXButton>
-                              <JFXButton maxWidth="80.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" styleClass="rounded-btn" text="Save" textFill="WHITE">
+                              <JFXButton fx:id="save" maxWidth="80.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" styleClass="rounded-btn" text="Save" textFill="WHITE">
                                  <graphic>
                                     <SVGPath content="M5 13l4 4L19 7" fill="#ffffff00" scaleX="0.8" scaleY="0.8" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                                  </graphic>

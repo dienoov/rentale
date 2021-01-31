@@ -17,7 +17,7 @@
     <children>
         <HBox alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #f8f9fa;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <JFXButton maxHeight="40.0" onAction="#newAct" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #16aaff; -fx-background-radius: 2.5em;" text="Edit" textFill="WHITE">
+                <JFXButton maxHeight="40.0" onAction="#edit" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #16aaff; -fx-background-radius: 2.5em;" text="Edit" textFill="WHITE">
                     <graphic>
                         <SVGPath content="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" fill="#ffffff00" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                     </graphic>
@@ -28,7 +28,7 @@
                         <Font name="Nunito Regular" size="15.0" />
                     </font>
                 </JFXButton>
-                <JFXButton maxHeight="40.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #d92550; -fx-background-radius: 2.5em;" text="Delete" textFill="WHITE">
+                <JFXButton maxHeight="40.0" onAction="#delete" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #d92550; -fx-background-radius: 2.5em;" text="Delete" textFill="WHITE">
                     <graphic>
                         <SVGPath content="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" fill="#ffffff00" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                     </graphic>
@@ -42,7 +42,7 @@
                         <Font name="Nunito Regular" size="15.0" />
                     </font>
                 </JFXButton>
-                <JFXButton onAction="#newAct" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #3ac47d; -fx-background-radius: 2.5em;" text="Create New" textFill="WHITE">
+                <JFXButton onAction="#create" prefHeight="42.0" prefWidth="150.0" style="-fx-background-color: #3ac47d; -fx-background-radius: 2.5em;" text="Create New" textFill="WHITE">
                     <graphic>
                         <SVGPath content="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                     </graphic>
@@ -93,22 +93,16 @@
                 </VBox>
             </children>
         </HBox>
-        <VBox layoutX="1200.0" layoutY="540.0" prefHeight="600.0" prefWidth="1005.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
-            <children>
-                <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css">
-                    <columns>
-                        <TableColumn fx:id="name" prefWidth="369.0" text="Name" />
-                  <TableColumn fx:id="location" prefWidth="174.0" text="Location" />
-                        <TableColumn fx:id="desc" minWidth="239.0" prefWidth="239.0" text="Description" />
-                    </columns>
-                    <VBox.margin>
-                        <Insets left="35.0" right="35.0" top="35.0" />
-                    </VBox.margin>
-                    <effect>
-                        <DropShadow color="#0000001a" height="50.0" radius="24.5" width="50.0" />
-                    </effect>
-                </TableView>
-            </children>
-        </VBox>
+          <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/style.css" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="185.0">
+              <columns>
+                  <TableColumn fx:id="name" prefWidth="286.0" text="Name" />
+            <TableColumn fx:id="location" prefWidth="187.0" text="Location" />
+            <TableColumn fx:id="address" prefWidth="292.0" text="Address" />
+                  <TableColumn fx:id="desc" minWidth="36.0" prefWidth="169.0" text="Description" />
+              </columns>
+              <effect>
+                  <DropShadow color="#0000001a" height="50.0" radius="24.5" width="50.0" />
+              </effect>
+          </TableView>
     </children>
 </AnchorPane>

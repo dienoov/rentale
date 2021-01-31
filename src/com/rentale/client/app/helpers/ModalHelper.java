@@ -53,6 +53,13 @@ public class ModalHelper {
         return parentPane;
     }
 
+    public static AnchorPane setModal(AnchorPane parentPane, AnchorPane modal, double[] constraints) {
+        AnchorPane backdrop = getBackdrop();
+        backdrop = setModalOnly(backdrop, modal, constraints);
+        parentPane = setBackdrop(parentPane, backdrop);
+        return parentPane;
+    }
+
     public static AnchorPane setModal(AnchorPane parentPane, String modal) {
         AnchorPane backdrop = getBackdrop();
         backdrop = setModalOnly(backdrop, FXMLHelper.getView(modal));

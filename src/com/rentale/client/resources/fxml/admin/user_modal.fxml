@@ -52,13 +52,13 @@
                   </HBox>
                   <VBox alignment="CENTER" layoutX="299.0" layoutY="132.0" prefHeight="400.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
                      <children>
-                        <JFXTextField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Email" />
-                        <JFXPasswordField focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Password">
+                        <JFXTextField fx:id="email" focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Email" />
+                        <JFXPasswordField fx:id="password" focusColor="#51d7a0" labelFloat="true" maxWidth="400.0" prefHeight="40.0" promptText="Password">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
                         </JFXPasswordField>
-                        <JFXComboBox focusColor="#51d7a0" prefHeight="40.0" prefWidth="400.0" promptText="Role">
+                        <JFXComboBox fx:id="role" focusColor="#51d7a0" prefHeight="40.0" prefWidth="400.0" promptText="Role">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
@@ -76,7 +76,7 @@
                                     <SVGPath content="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" fill="WHITE" />
                                  </graphic>
                               </JFXButton>
-                              <JFXButton maxWidth="80.0" minWidth="100.0" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" styleClass="rounded-btn" text="Save" textFill="WHITE">
+                              <JFXButton fx:id="saveBtn" maxWidth="80.0" minWidth="100.0" onAction="#save" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #3ac47d;" styleClass="rounded-btn" text="Save" textFill="WHITE">
                                  <graphic>
                                     <SVGPath content="M5 13l4 4L19 7" fill="#ffffff00" scaleX="0.8" scaleY="0.8" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="2.0" />
                                  </graphic>

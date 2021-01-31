@@ -63,7 +63,7 @@ public class User implements Initializable {
         table.setItems(getUsers());
     }
 
-    public ObservableList<Users> getUsers() {
+    public static ObservableList<Users> getUsers() {
         ObservableList<Users> users = FXCollections.observableArrayList();
 
         ResultSet rs = null;
@@ -85,10 +85,10 @@ public class User implements Initializable {
         userAnchor = ModalHelper.setModal(userAnchor, "admin/user_modal", constraints);
     }
 
-    public static void closeModal(MouseEvent mouseEvent) {
-        Scene scene = ((Node) mouseEvent.getSource()).getScene();
+    public static void closeModal(Scene scene) {
         AnchorPane userAnchor = (AnchorPane) scene.lookup("#userAnchor");
         userAnchor.getChildren().remove(userAnchor.lookup("#backdrop"));
+        ((TableView) userAnchor.lookup("#table")).setItems(getUsers());
     }
 
     public static void save(String email, String password, int role) throws Exception {
@@ -142,6 +142,7 @@ public class User implements Initializable {
         save.setOnAction(event -> {
             Roles selected = (Roles) role.getSelectionModel().getSelectedItem();
             update(user.getId(), email.getText(), selected.getId());
+            closeModal(userAnchor.getScene());
         });
 
         userAnchor = ModalHelper.setModal(userAnchor, userModal, constraints);

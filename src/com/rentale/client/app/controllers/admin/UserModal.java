@@ -7,6 +7,7 @@ import com.rentale.client.app.dao.Roles;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.shape.SVGPath;
 
 import java.net.URL;
@@ -32,7 +33,7 @@ public class UserModal implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        closeModalBtn.setOnMouseClicked(mouseEvent -> closeModal(mouseEvent));
+        closeModalBtn.setOnMouseClicked(mouseEvent -> closeModal(((Node) mouseEvent.getSource()).getScene()));
 
         role.setItems(Roles.getAllRoles());
 
@@ -45,6 +46,7 @@ public class UserModal implements Initializable {
     @FXML
     public void save(ActionEvent event) throws Exception {
         User.save(email.getText(), password.getText(), selectedRoleId);
+        closeModal(((Node) event.getSource()).getScene());
     }
 
 }

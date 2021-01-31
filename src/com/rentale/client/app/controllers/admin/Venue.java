@@ -83,12 +83,17 @@ public class Venue implements Initializable {
 
         AnchorPane form = (AnchorPane) ((ScrollPane) modal.getChildren().get(0)).getContent();
 
-        ((JFXButton) form.lookup("#save")).setOnAction(event -> save(
-                ((JFXTextField) form.lookup("#name")).getText(),
-                ((JFXTextField) form.lookup("#location")).getText(),
-                ((JFXTextField) form.lookup("#address")).getText(),
-                ((JFXTextArea) form.lookup("#description")).getText()
-        ));
+        ((JFXButton) form.lookup("#save")).setOnAction(event -> {
+            save(
+                    ((JFXTextField) form.lookup("#name")).getText(),
+                    ((JFXTextField) form.lookup("#location")).getText(),
+                    ((JFXTextField) form.lookup("#address")).getText(),
+                    ((JFXTextArea) form.lookup("#description")).getText()
+            );
+            closeModal(event);
+        });
+
+        ((JFXButton) form.lookup("#back")).setOnAction(event -> closeModal(event));
 
         managePane = ModalHelper.setModal(managePane, modal, constraints);
     }
@@ -125,13 +130,12 @@ public class Venue implements Initializable {
         JFXTextArea description = (JFXTextArea) form.lookup("#description");
         description.setText(venue.getDesc());
 
-        ((JFXButton) form.lookup("#save")).setOnAction(event -> save(
-                venue.getId(),
-                name.getText(),
-                location.getText(),
-                address.getText(),
-                description.getText()
-        ));
+        ((JFXButton) form.lookup("#save")).setOnAction(event -> {
+            save(venue.getId(), name.getText(), location.getText(), address.getText(), description.getText());
+            closeModal(event);
+        });
+
+        ((JFXButton) form.lookup("#back")).setOnAction(event -> closeModal(event));
 
         managePane = ModalHelper.setModal(managePane, modal, constraints);
     }
@@ -176,14 +180,20 @@ public class Venue implements Initializable {
             PreparedStatement delete = connection.prepareStatement("delete from venues where id = ?");
             delete.setInt(1, (table.getSelectionModel().getSelectedItem()).getId());
             delete.executeUpdate();
+            table.setItems(getVenues());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
     }
 
+    public void closeModal(ActionEvent event) {
+        closeModal(((Node) event.getSource()).getScene());
+    }
+
     public void closeModal(Scene scene) {
         AnchorPane managePane = (AnchorPane) scene.lookup("#managePane");
         managePane.getChildren().remove(managePane.lookup("#backdrop"));
+        ((TableView) managePane.lookup("#table")).setItems(getVenues());
     }
 
 }

@@ -3,6 +3,7 @@ package com.rentale.client.app.controllers;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import com.rentale.client.app.config.DB;
+import com.rentale.client.app.dao.Roles;
 import com.rentale.client.app.helpers.FXMLHelper;
 import com.rentale.client.app.helpers.LabelHelper;
 import javafx.event.ActionEvent;
@@ -56,7 +57,7 @@ public class Login implements Initializable {
             errors.getChildren().add(dangerLabel("Wrong password, please try again"));
 
         else
-            loginProcess(event, user.getInt("role_id"));
+            loginProcess(event, user.getInt("role_id"), userEmail);
 
     }
 
@@ -64,7 +65,7 @@ public class Login implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
     }
 
-    protected void loginProcess(ActionEvent event, int role_id) {
+    protected void loginProcess(ActionEvent event, int role_id, String userEmail) {
         String viewSource;
         if (role_id == 1)
             viewSource = "dashboard";
@@ -72,6 +73,9 @@ public class Login implements Initializable {
             viewSource = "staff/home";
 
         Parent view = FXMLHelper.getView(viewSource);
+
+        ((Label) view.lookup("#userRole")).setText(Roles.getRoleNameById(role_id));
+        ((Label) view.lookup("#userEmail")).setText(userEmail);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.getScene().setRoot(view);

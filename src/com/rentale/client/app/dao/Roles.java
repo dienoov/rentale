@@ -50,4 +50,13 @@ public class Roles {
         roles.add(new Roles(2, "Staff"));
         return roles;
     }
+
+    public static String getRoleNameById(int id) {
+        switch (id) {
+            case 1:
+                return "Admin";
+            default:
+                return "Staff";
+        }
+    }
 }

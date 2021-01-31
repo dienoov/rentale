@@ -2,16 +2,28 @@ package com.rentale.client.app.controllers;
 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import com.rentale.client.app.config.DB;
+import com.rentale.client.app.helpers.FXMLHelper;
+import com.rentale.client.app.helpers.LabelHelper;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
+
+import static com.rentale.client.app.helpers.LabelHelper.dangerLabel;
 
 public class Login implements Initializable {
 
@@ -22,23 +34,46 @@ public class Login implements Initializable {
     protected JFXPasswordField password;
 
     @FXML
-    public void authLogin(ActionEvent event) throws Exception{
+    protected HBox errors;
+
+    @FXML
+    public void authLogin(ActionEvent event) throws Exception {
         String userEmail = email.getText();
+        String userPassword = password.getText();
 
-        String viewSource;
-        if(userEmail.equals("admin"))
-            viewSource = "/com/rentale/client/resources/fxml/dashboard.fxml";
+        Connection connection = DB.getConnection();
+
+        PreparedStatement getUser = connection.prepareStatement("select * from users where email = ?;");
+        getUser.setString(1, userEmail);
+        ResultSet user = getUser.executeQuery();
+
+        errors.getChildren().clear();
+
+        if (!user.next())
+            errors.getChildren().add(dangerLabel("No user with that address"));
+
+        else if (!BCrypt.checkpw(userPassword, user.getString("password")))
+            errors.getChildren().add(dangerLabel("Wrong password, please try again"));
+
         else
-            viewSource = "/com/rentale/client/resources/fxml/staff/home.fxml";
+            loginProcess(event, user.getInt("role_id"));
 
-        Parent view = FXMLLoader.load(getClass().getResource(viewSource));
-
-        Stage window = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        window.getScene().setRoot(view);
-        window.show();
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+    }
+
+    protected void loginProcess(ActionEvent event, int role_id) {
+        String viewSource;
+        if (role_id == 1)
+            viewSource = "dashboard";
+        else
+            viewSource = "staff/home";
+
+        Parent view = FXMLHelper.getView(viewSource);
+
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.getScene().setRoot(view);
     }
 }

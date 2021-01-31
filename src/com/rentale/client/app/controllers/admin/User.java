@@ -1,8 +1,7 @@
 package com.rentale.client.app.controllers.admin;
 
+import com.rentale.client.app.config.DB;
 import com.rentale.client.app.dao.Users;
-import com.rentale.client.app.helpers.AnchorPaneHelper;
-import com.rentale.client.app.helpers.FXMLHelper;
 import com.rentale.client.app.helpers.ModalHelper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,9 +15,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class User implements Initializable {
@@ -41,6 +43,8 @@ public class User implements Initializable {
     protected AnchorPane backdrop;
 
     protected AnchorPane modalUser;
+
+    protected static Connection connection;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -70,9 +74,21 @@ public class User implements Initializable {
     }
 
     public void closeModal(MouseEvent mouseEvent) {
-        Scene scene = (Scene) ((Node) mouseEvent.getSource()).getScene();
+        Scene scene = ((Node) mouseEvent.getSource()).getScene();
         AnchorPane userAnchor = (AnchorPane) scene.lookup("#userAnchor");
         userAnchor.getChildren().remove(userAnchor.lookup("#backdrop"));
+    }
+
+    public static void saveUser(String email, String password) throws Exception {
+        connection = DB.getConnection();
+
+        String bcrypt = BCrypt.hashpw(password, BCrypt.gensalt());
+
+        PreparedStatement saveUser = connection.prepareStatement("insert into users (email, password, role_id) values (?, ?, ?);");
+        saveUser.setString(1, email);
+        saveUser.setString(2, bcrypt);
+        saveUser.setInt(3, 2);
+        saveUser.executeUpdate();
     }
 
 }

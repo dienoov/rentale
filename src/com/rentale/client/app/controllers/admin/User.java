@@ -163,4 +163,22 @@ public class User implements Initializable {
         }
     }
 
+    public static void reset(ActionEvent actionEvent) {
+        Scene scene = ((Node) actionEvent.getSource()).getScene();
+        TableView table = (TableView) scene.lookup("#table");
+
+        Connection connection = DB.getConnection();
+
+        try {
+            PreparedStatement reset = connection.prepareStatement("update users set password = ? where id = ?");
+            reset.setString(1, BCrypt.hashpw("12345678", BCrypt.gensalt()));
+            reset.setInt(2, ((Users) table.getSelectionModel().getSelectedItem()).getId());
+            reset.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        closeModal(scene);
+    }
+
 }

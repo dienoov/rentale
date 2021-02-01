@@ -68,7 +68,7 @@
                               <Insets top="40.0" />
                            </VBox.margin>
                            <children>
-                              <JFXButton prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #6c757d;" styleClass="rounded-btn" text="Reset" textFill="WHITE">
+                              <JFXButton fx:id="reset" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #d92550;" styleClass="rounded-btn" text="Reset" textFill="WHITE">
                                  <HBox.margin>
                                     <Insets right="10.0" />
                                  </HBox.margin>

@@ -12,4 +12,10 @@ public class LabelHelper {
         return label;
     }
 
+    public static Label successLabel(String s) {
+        label = new Label(s);
+        label.setStyle("-fx-text-fill: green;");
+        return label;
+    }
+
 }

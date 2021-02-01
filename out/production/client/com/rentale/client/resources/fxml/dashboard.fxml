@@ -125,8 +125,8 @@
             </SVGPath>
             <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label text="John Doe" />
-                  <Label text="john.doe@email.com" textFill="#505050" />
+                  <Label fx:id="userRole" text="John Doe" />
+                  <Label fx:id="userEmail" text="john.doe@email.com" textFill="#505050" />
                </children>
             </VBox>
             <SVGPath content="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill="#333333">
